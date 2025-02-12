@@ -16,7 +16,7 @@
   --bg-image:  url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   --font-color: #353430;
-  --color-text-section:var(--font-color); 
+  --color-text-section:var(--font-color);
   --font-menu: var(--font-color);
   --accent-color: #FF8DCB;
   --color-rec: var(--bg-color);
@@ -31,7 +31,7 @@
   :root { --bg-image:  url(../images/cover-image-light.png);
     --bg-color: #fff1f7;
     --font-color: #353430;
-    --color-text-section:var(--font-color); 
+    --color-text-section:var(--font-color);
     --font-menu: var(--font-color);
     --accent-color: #FF8DCB;
     --color-rec: var(--bg-color);

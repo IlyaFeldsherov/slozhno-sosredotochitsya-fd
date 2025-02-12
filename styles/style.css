@@ -93,7 +93,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-outline-color) 
+  outline: 1px solid var(--button-outline-color)
 }
 
 .header__theme-menu-button:focus-visible {
@@ -408,7 +408,7 @@ padding: 2.6vw;
       inline-size: 24vw;
       margin-block-start: 1.3vw;
     }
-    .content_title-text{
+    .content_title-text {
       margin-block-start: 2.6vw;
       grid-column: 2;
     }
@@ -473,8 +473,8 @@ padding: 2.6vw;
   object-fit: cover;
   height: 28.5vw;
 }
-.pictures_street { 
-grid-column:2/4 ;
+.pictures_street {
+  grid-column:2/4 ;
 }
 
 /*-----------------------------------------*/

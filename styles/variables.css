@@ -14,7 +14,7 @@
   --font-menu: var(--accent-color);
   --color-rec: var(--accent-color);
   --color-title: #DB00FF;
-  --color-text: #F1B2CE; 
+  --color-text: #F1B2CE;
   --color-text-section: var(--color-text);
   --button-outline-color: #FF007066 ;
 }
