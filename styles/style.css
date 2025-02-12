@@ -1,0 +1,696 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  background-attachment: fixed;
+  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.content_link {
+  text-decoration: none;
+  color: var(--color-text);
+  text-shadow: 1px 1px 0 var(--accent-color);
+}
+
+.content_link:hover {
+  border-bottom: 1px solid var(--color-text);
+}
+
+.content_link:focus-visible {
+  outline: 1px solid var(--color-text)     ;
+}
+
+/* header----------------------------------*/
+ 
+.decorated-zone {
+  min-height: 668px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+  background-image:var(--bg-image);
+  background-position: top;
+  background-size: 286%;
+}
+
+.empty__block {
+  justify-self: right;
+  margin-inline-end: 2.3vw;
+  margin-block-start: 2.3vw;
+  height: max-content;
+}
+
+.empty__block::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-top: 1px solid var(--font-menu);
+  border-right: 1px solid var(--font-menu);
+  width: 24px;
+  height: 24px;
+  margin-left: 37px;
+  margin-block-start: 0px;
+}
+
+.decorated__el {
+  display: block;
+  font-family: var(--font-family);
+ color: var(--color-rec);
+ text-transform: uppercase;
+ font-size: var(--font-size-main);
+ margin-block-start: 1px;
+ margin-inline-end: 13px;
+}
+
+
+.decorated__el::after {
+  border-radius: 50%;
+  background-color: var(--color-rec);
+  content: "";
+  display: inline-block;
+  margin-inline-start: 12px;
+  margin-block-end: 4px;
+  box-shadow: var(--color-rec)0 0 4px 4px;
+  width: 5px;
+  height: 5px;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 11px;
+}
+
+.header__theme-menu-button {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--font-menu);
+  text-transform: lowercase;
+ border: none;
+  font-family: var(--font-family);
+  font-size: var(--font-size-main);
+  block-size: 25px;
+  inline-size: 70px;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-outline-color) 
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--font-menu) ;
+}
+
+.header__theme-menu-button_active {
+  cursor: default;
+  border-color: currentColor;
+  pointer-events: none;
+  outline: 1px solid var(--font-menu);
+}
+
+
+.header__theme-menu {
+  margin-block-start: 2.45em;
+  justify-self: right;
+  margin-inline-end: 2.5vw;
+}
+
+
+.header__theme-menu-item:focus {
+  outline: var(--accent-color) 1px solid;
+}
+
+.header__title {
+  color: var(--color-title);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: bold;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-family: var(--font-family);
+  line-height: 95.7PX;
+  margin-block-start: 0.59em;
+  margin-inline-start: 2.4vw;
+  margin-block-end: 0.47em;
+}
+
+.title-decor {
+  justify-self: right;
+  width: 355px;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  color: var(--font-color);
+  line-height: var(--line-height-main);
+  font-size: var(--font-size-main);
+  font-family: var(--font-family);
+  margin-inline-end: 2.5vw;
+}
+
+.empty__block-bottom {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--font-menu);
+  border-bottom: 1px solid var(--font-menu);
+  margin-inline-start: 2.5vw;
+  margin-block-end: 1vh;
+  align-self: end;
+}
+
+
+/* content_section-a -----------------------------------------------------------------*/
+
+
+.content_section-a {
+display: grid;
+padding: 10px;
+}
+
+.content_section-a-title {
+  color: var(--font-menu);
+  font-size: var(--font-size-main);
+  font-family: var(--font-family);
+  margin-block-start: 1.7em;
+}
+
+.content_title-text-section-a {
+  color: var(--font-color);
+  background-color: var(--accent-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-main);
+  margin-block-start: 1.14em;
+}
+
+.content_section-a-text {
+  color: var(--color-text-section);
+  font-family: var(--font-family);
+  font-size: var(--font-size-main);
+  margin-block-start: 0.56em;
+  line-height: var(--line-height-main);
+}
+
+
+
+/* content_section-b --------------------------------------------------------*/
+
+.content_section-b {
+padding: 0.6em;
+font-size: var(--font-size-main);
+font-family: var(--font-family);
+margin-block-start: 1.45em;
+}
+
+.content_title-text {
+  color: var(--font-color);
+  background-color: var(--accent-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-main);
+  margin-block-start: 1.15em;
+}
+
+.content_section-b-title {
+  color: var(--font-menu);
+  font-size: var(--font-size-main);
+  font-family: var(--font-family);
+}
+
+.content_section-b-text {
+  color:var(--color-text-section);
+  font-size: var(--font-size-main);
+  font-family: var(--font-family);
+  margin-block-start: 0.57em;
+  line-height: var(--line-height-main);
+}
+
+/* content_section-c---------------------------------------------------------*/
+
+.content_section-c {
+padding: 2.6vw;
+}
+
+.content_section-title {
+  color: var(--font-color);
+  background-color: var(--accent-color);
+  font-size: var(--font-size-main);
+  font-family: var(--font-family);
+  margin-block-start: 1.1em;
+}
+
+.content_section-c-title {
+  color: var(--font-menu);
+  font-size: var(--font-size-main);
+  font-family: var(--font-family);
+  margin-block-start: 1.6em;
+}
+
+.content_section-c-text {
+  color:var(--color-text-section);
+  font-size: var(--font-size-main);
+  font-family: var(--font-family);
+  margin-block-start: 0.57em;
+  line-height: var(--line-height-main);
+}
+
+/*section_pictures ----------------------------------------------------------*/
+
+.section_pictures {
+  display: grid;
+  padding: 0.6em;
+  margin-block-start: 0.3em;
+}
+
+.content_section-title-pictures {
+  color: var(--font-color);
+  background-color: var(--accent-color);
+  font-size: var(--font-size-main);
+  font-family: var(--font-family);
+  margin-block-start: 1.3em;
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: auto;
+  margin-block-start: 0.7em;
+  gap: 0.6em;
+}
+
+.pictures_sunset {
+  width: 100%;
+}
+
+.pictures_ice-cream {
+  width: 100%;
+}
+
+.pictures_tape {
+  width: 100%;
+}
+
+.pictures_books {
+  width: 100%;
+}
+
+.pictures_street {
+  width: 100%;
+}
+
+/*footer--------------------------------*/
+
+
+.footer {
+  min-height: 668px ;
+}
+
+.top_empty_block {
+  justify-self: right;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-right: 1px solid var(--font-menu);
+  border-top: 1px solid var(--font-menu);
+  margin-inline-end: 0.6em;
+  margin-block-start: 2.4em;
+}
+
+.title_footer {
+  color: var(--color-title);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-family: var(--font-family);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  justify-self: center;
+  margin-block-start: 1.94em;
+  
+}
+
+.bottom_empty_block {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-left: 1px solid var(--font-menu);
+  border-bottom: 1px solid var(--font-menu);
+  margin-block-start: 13.8em;
+  margin-inline-start: 2.5vw;
+}
+
+
+
+
+
+/* Медиазапрос для 768px----------------------*/
+
+
+
+
+
+@media (width >= 768px) {
+  .decorated-zone {
+    min-height: 1024px;
+   padding: 0;
+   background-size: 213%;
+  }
+  .header__theme-menu {
+   margin-block-start: 9.2em;
+   margin-inline-end: 1.2em;
+  }
+  .header__title {
+    margin-inline-start: 0;
+    margin-block-start: 1.5em;
+  }
+  .empty__block {
+    margin-inline-end: 1.1em;
+    margin-block-start: 1.2em;
+  }
+  .title-decor {
+    margin-block-start: 5.8em;
+    margin-inline-end: 1.1em;
+    min-width: 364px;
+  }
+  .empty__block-bottom {
+    margin-inline-start: 2.5vw;
+    margin-block-end: 2.5vw;
+  }
+
+
+/*-------------------------------------*/
+  .content_title-text-section-a {
+    grid-column: 2;
+  }
+  .content_section-a {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2.5vw;
+    padding: 2.5vw;
+    }
+    .content_section-a-title {
+      grid-column: 1;
+      margin-block-start: 2.2em;
+    }
+    .title_media-midle {
+      grid-column: 2;
+      grid-row: 1;
+      margin-block-start: 5vw;
+      height: 3vw;
+    }
+    .text_media-midle {
+      grid-column: 2;
+      grid-row: 1/2;
+      margin-block-start: 9.3vw;
+    }
+    .content_section-a-text {
+      grid-column: 2;
+    }
+
+
+/*-----------------------------*/
+
+    .content_section-b {
+      padding: 2.6vw;
+    }
+    .content_section-b-title {
+      inline-size: 24vw;
+      margin-block-start: 1.3vw;
+    }
+    .content_title-text{
+      margin-block-start: 2.6vw;
+      grid-column: 2;
+    }
+
+
+/*---------------------------------------------------*/
+
+    .content_section-c {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 64px;
+      padding: 2.6vw;
+      column-gap: 2.6vw;
+    }
+    .content_section-c-title {
+      grid-column: 1;
+      margin-block-start: 2.1em;
+    }
+    .content_section-title {
+      grid-column: 2;
+      margin-block-start: 2.1em;
+      block-size: 3vw;
+    }
+    .content_section-c-text {
+      grid-column: 2;
+      margin-block-start: 0.5em;
+    }
+
+/*-----------------------------------------*/
+ 
+.section_pictures {
+  padding: 2.6vw;
+  margin-block-start: 0.9em;
+}
+.pictures {
+  height: auto;
+  display: grid;
+  grid-template-columns: 28.3vw 28.9vw 28.4vw;
+  grid-template-rows: 24vw 28.4vw max-content;
+  margin-block-start: 1.2em;
+  gap: 1.3em;
+}
+.pictures_sunset {
+  height: 24.1vw;
+  grid-column: 1 / 3;
+  object-fit: cover;
+}
+.pictures_ice-cream {
+  height: 55vw;
+  object-fit: cover;
+  grid-row: 1 / 3;
+  grid-column: 3;
+}
+.pictures_tape {
+  height: 70.6vw;
+  grid-column: 1;
+  grid-row: 2 / 4;
+  object-fit: cover;
+}
+.pictures_books {
+  grid-column: 2;
+  object-fit: cover;
+  height: 28.5vw;
+}
+.pictures_street { 
+grid-column:2/4 ;
+}
+
+/*-----------------------------------------*/
+
+.footer {
+  min-height: 1024px;
+}
+.top_empty_block {
+  justify-self: right;
+  margin-inline-end: 1.2em;
+  margin-block-start: 3.6em;
+}
+.title_footer {
+  margin-block-start: 3.27em;
+}
+.bottom_empty_block {
+  margin-block-start: 24.35em;
+  margin-inline-start: 1.3em;
+}
+}
+
+
+/*Медиазапрос для 1024px-------------------------*/
+
+
+@media (width >= 1024px) {
+  .decorated-zone {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: 1024px;
+   padding: 0;
+   background-size: 120%;
+   min-block-size: 768px;
+  }
+  .header__theme-menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-block-start: 1.8vw;
+    margin-inline-end: 5.3vw;
+}
+  .header__theme-menu {
+    grid-column: 1;
+    grid-row: 1;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+}
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-inline-start: 0;
+    margin-block-end: 0em;
+    margin-block-start: 1.86em;
+    grid-column: 1/3;
+}
+  .empty__block {
+    margin-inline-end: 1.15em;
+    margin-block-start: 1.3em;
+    grid-column: 2;
+  }
+  .title-decor {
+    margin-block-start: 7.3em;
+    margin-inline-end: 1.1em;
+    grid-column: 1/3;
+    min-width: 491px;
+}
+  .empty__block-bottom {
+    margin-inline-start: 1.8vw;
+    margin-block-end: 2vw;
+  }
+
+
+  /*-------------------------------------------*/
+
+
+  .content_title-text-section-a {
+    grid-column: 2;
+  }
+  .content_section-a {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0.8vw;
+    padding: 1.9vw;
+    }
+    .content_section-a-title {
+      grid-column: 1;
+      margin-block-start: 3.9vw;
+    }
+    .title_media-midle {
+      grid-column: 2;
+      grid-row: 1;
+      margin-block-start: 2.2em;
+      height: 1.3em;
+    }
+    .text_media-midle {
+      grid-column: 2;
+      grid-row: 1/2;
+      margin-block-start: 7vw;
+    }
+    .content_section-a-text {
+      grid-column: 2;
+    }
+
+    /*--------------------------------------------*/
+
+
+    .content_section-b {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-block-start: 1.5em;
+      padding: 1.8vw;
+      column-gap: 2vw;
+    }
+    .title_text-first-column {
+      grid-column: 1;
+    }
+    .text_first-column {
+      grid-column: 1;
+    }
+    .title_text-two-column {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .text_two-column {
+      grid-column: 2;
+    }
+    .title_text-three-column {
+      grid-column: 3;
+      grid-row: 2;
+    }
+    .text_three-column {
+      grid-column: 3;
+    }
+    
+    .content_title-text {
+      margin-block-start: 2vw;
+    }
+    
+    .content_section-b-title {
+      inline-size: 28vw;
+    }
+    
+    .content_section-b-text {
+      margin-block-start: 0.6em;
+    }
+
+    /*-------------------------------------------------*/
+    
+.content_section-c {
+  padding: 1.8vw;
+  gap: 0.9vw;
+}
+
+.content_section-title {
+  margin-block-start: 2.3em;
+  block-size: 1.25em;
+}
+
+.section-c-title-text {
+  margin-block-start: 0.65em;
+}
+
+.content_section-c-title {
+  margin-block-start: 2.3em;
+}
+
+.content_section-c-text {
+  margin-block-start: 0em;
+}
+
+
+/*------------------------------------------------*/
+
+
+
+.section_pictures {
+  padding: 1.2em;
+  margin-block-start: 1em;
+}
+.content_section-title-pictures {
+  margin-block-start: 1.2em;
+}
+.pictures {
+  min-block-size: 1052px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 24.6vw 29.8vw;
+  margin-block-start: 1.3em;
+  gap: 1.3em;
+}
+.pictures_sunset {
+  height: 24.7vw;
+}
+.pictures_ice-cream {
+  height: 56.3vw;
+}
+.pictures_tape {
+  height: 72.7vw;
+}
+.pictures_books {
+  height: 29.8vw;
+}
+.pictures_street {
+  height: 40.8vw;
+}
+
+/*------------------------------------------*/
+
+.footer {
+  min-height: 768px;
+}
+.top_empty_block {
+  margin-inline-end: 2vw;
+}
+.title_footer {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  margin-block-start: 1.52em;
+}
+.bottom_empty_block {
+  margin-block-start: 14.9em;
+}
+}
