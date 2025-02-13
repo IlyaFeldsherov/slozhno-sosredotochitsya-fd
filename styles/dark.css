@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root.theme-dark .page {
+:root.theme-dark {
   --bg-image:  url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --font-color:var(--bg-color);

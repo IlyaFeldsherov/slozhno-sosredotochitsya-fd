@@ -6,7 +6,7 @@
 
 
 
-:root.theme-light .page {
+:root.theme-light {
   
   --bg-image:  url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
